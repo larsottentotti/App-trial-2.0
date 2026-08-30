@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE_NAME = "grasso-di-scende-v1";
+const CACHE_NAME = "grasso-di-scende-v2";
 
 const APP_SHELL = [
   "./",

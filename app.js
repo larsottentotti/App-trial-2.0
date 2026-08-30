@@ -48,8 +48,11 @@ const state = {
 
   deck: [],
   deckPos: 0,
+  cardsShown: 0,
+  retryQueue: [],       // {pairIndex, dueAt} - words that were missed, due to reappear soon
 
   currentPair: null,
+  currentPairIndex: null,
   currentPairConjugated: false,
   currentTenseKey: null,
   currentConjugations: [],
@@ -270,10 +273,36 @@ function buildDeck() {
   const indices = set.pairs.map((_, i) => i);
   state.deck = shuffle(indices);
   state.deckPos = 0;
+  state.cardsShown = 0;
+  state.retryQueue = [];
+}
+
+function scheduleRetry(pairIndex) {
+  // Reappear at random somewhere 5-10 cards from now.
+  const delay = 5 + Math.floor(Math.random() * 6);
+  state.retryQueue.push({
+    pairIndex,
+    dueAt: state.cardsShown + delay,
+  });
 }
 
 function nextPairIndex() {
   const set = getCurrentSet();
+  const upcomingCardNumber = state.cardsShown + 1;
+
+  const dueEntries = state.retryQueue
+    .map((entry, i) => ({ entry, i }))
+    .filter(({ entry }) => entry.dueAt <= upcomingCardNumber);
+
+  if (dueEntries.length) {
+    // Prefer a due entry that isn't the pair just shown, to avoid an
+    // immediate back-to-back repeat when multiple are due at once.
+    let pick = dueEntries.find(d => d.entry.pairIndex !== state.currentPairIndex) || dueEntries[0];
+    state.retryQueue.splice(pick.i, 1);
+    state.cardsShown += 1;
+    return pick.entry.pairIndex;
+  }
+
   if (state.deckPos >= state.deck.length) {
     let reshuffled = shuffle(set.pairs.map((_, i) => i));
     // avoid immediate repeat of the very last card across a reshuffle
@@ -286,14 +315,17 @@ function nextPairIndex() {
   }
   const idx = state.deck[state.deckPos];
   state.deckPos += 1;
+  state.cardsShown += 1;
   return idx;
 }
 
 function prepareCard() {
   const set = getCurrentSet();
-  const pair = set.pairs[nextPairIndex()];
+  const idx = nextPairIndex();
+  const pair = set.pairs[idx];
 
   state.currentPair = pair;
+  state.currentPairIndex = idx;
   state.currentPairConjugated = false;
   state.currentTenseKey = null;
   state.currentConjugations = [];
@@ -649,6 +681,7 @@ function finishCard(isCorrect, displayCorrectAnswer) {
     state.correctCount += 1;
   } else {
     state.wrongCount += 1;
+    scheduleRetry(state.currentPairIndex);
   }
 
   recordWordResult(isCorrect);
