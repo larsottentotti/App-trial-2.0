@@ -509,902 +509,902 @@
       "isItalianVerbs": false,
       "pairs": [
         {
-          "dutch": "huis",
-          "other": "casa",
+          "dutch": "het huis",
+          "other": "la casa",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "kamer",
-          "other": "stanza",
+          "dutch": "de kamer",
+          "other": "la stanza",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "keuken",
-          "other": "cucina",
+          "dutch": "de keuken",
+          "other": "la cucina",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "badkamer",
-          "other": "bagno",
+          "dutch": "de badkamer",
+          "other": "il bagno",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "deur",
-          "other": "porta",
+          "dutch": "de deur",
+          "other": "la porta",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "raam",
-          "other": "finestra",
+          "dutch": "het raam",
+          "other": "la finestra",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "tafel",
-          "other": "tavolo",
+          "dutch": "de tafel",
+          "other": "il tavolo",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "stoel",
-          "other": "sedia",
+          "dutch": "de stoel",
+          "other": "la sedia",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "bed",
-          "other": "letto",
+          "dutch": "het bed",
+          "other": "il letto",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "bank",
-          "other": "divano",
+          "dutch": "de bank",
+          "other": "il divano",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "auto",
-          "other": "macchina",
+          "dutch": "de auto",
+          "other": "la macchina",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "fiets",
-          "other": "bicicletta",
+          "dutch": "de fiets",
+          "other": "la bicicletta",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "trein",
-          "other": "treno",
+          "dutch": "de trein",
+          "other": "il treno",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "bus",
-          "other": "autobus",
+          "dutch": "de bus",
+          "other": "l'autobus",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "vliegtuig",
-          "other": "aereo",
+          "dutch": "het vliegtuig",
+          "other": "l'aereo",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "station",
-          "other": "stazione",
+          "dutch": "het station",
+          "other": "la stazione",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "luchthaven",
-          "other": "aeroporto",
+          "dutch": "de luchthaven",
+          "other": "l'aeroporto",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "straat",
-          "other": "strada",
+          "dutch": "de straat",
+          "other": "la strada",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "stad",
-          "other": "città",
+          "dutch": "de stad",
+          "other": "la città",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "dorp",
-          "other": "paese",
+          "dutch": "het dorp",
+          "other": "il paese",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "land",
-          "other": "paese",
+          "dutch": "het land",
+          "other": "il paese",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "wereld",
-          "other": "mondo",
+          "dutch": "de wereld",
+          "other": "il mondo",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "zee",
-          "other": "mare",
+          "dutch": "de zee",
+          "other": "il mare",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "rivier",
-          "other": "fiume",
+          "dutch": "de rivier",
+          "other": "il fiume",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "berg",
-          "other": "montagna",
+          "dutch": "de berg",
+          "other": "la montagna",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "strand",
-          "other": "spiaggia",
+          "dutch": "het strand",
+          "other": "la spiaggia",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "park",
-          "other": "parco",
+          "dutch": "het park",
+          "other": "il parco",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "tuin",
-          "other": "giardino",
+          "dutch": "de tuin",
+          "other": "il giardino",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "boom",
-          "other": "albero",
+          "dutch": "de boom",
+          "other": "l'albero",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "bloem",
-          "other": "fiore",
+          "dutch": "de bloem",
+          "other": "il fiore",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "zon",
-          "other": "sole",
+          "dutch": "de zon",
+          "other": "il sole",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "maan",
-          "other": "luna",
+          "dutch": "de maan",
+          "other": "la luna",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "ster",
-          "other": "stella",
+          "dutch": "de ster",
+          "other": "la stella",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "regen",
-          "other": "pioggia",
+          "dutch": "de regen",
+          "other": "la pioggia",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "sneeuw",
-          "other": "neve",
+          "dutch": "de sneeuw",
+          "other": "la neve",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "wind",
-          "other": "vento",
+          "dutch": "de wind",
+          "other": "il vento",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "weer",
-          "other": "tempo",
+          "dutch": "het weer",
+          "other": "il tempo",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "dag",
-          "other": "giorno",
+          "dutch": "de dag",
+          "other": "il giorno",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "nacht",
-          "other": "notte",
+          "dutch": "de nacht",
+          "other": "la notte",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "ochtend",
-          "other": "mattina",
+          "dutch": "de ochtend",
+          "other": "la mattina",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "middag",
-          "other": "pomeriggio",
+          "dutch": "de middag",
+          "other": "il pomeriggio",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "avond",
-          "other": "sera",
+          "dutch": "de avond",
+          "other": "la sera",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "week",
-          "other": "settimana",
+          "dutch": "de week",
+          "other": "la settimana",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "maand",
-          "other": "mese",
+          "dutch": "de maand",
+          "other": "il mese",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "jaar",
-          "other": "anno",
+          "dutch": "het jaar",
+          "other": "l'anno",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "tijd",
-          "other": "tempo",
+          "dutch": "de tijd",
+          "other": "il tempo",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "uur",
-          "other": "ora",
+          "dutch": "het uur",
+          "other": "l'ora",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "minuut",
-          "other": "minuto",
+          "dutch": "de minuut",
+          "other": "il minuto",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "moment",
-          "other": "momento",
+          "dutch": "het moment",
+          "other": "il momento",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "mens",
-          "other": "persona",
+          "dutch": "de mens",
+          "other": "la persona",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "man",
-          "other": "uomo",
+          "dutch": "de man",
+          "other": "l'uomo",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "vrouw",
-          "other": "donna",
+          "dutch": "de vrouw",
+          "other": "la donna",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "kind",
-          "other": "bambino",
+          "dutch": "het kind",
+          "other": "il bambino",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "jongen",
-          "other": "ragazzo",
+          "dutch": "de jongen",
+          "other": "il ragazzo",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "meisje",
-          "other": "ragazza",
+          "dutch": "het meisje",
+          "other": "la ragazza",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "vriend",
-          "other": "amico",
+          "dutch": "de vriend",
+          "other": "l'amico",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "vriendin",
-          "other": "amica",
+          "dutch": "de vriendin",
+          "other": "l'amica",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "familie",
-          "other": "famiglia",
+          "dutch": "de familie",
+          "other": "la famiglia",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "moeder",
-          "other": "madre",
+          "dutch": "de moeder",
+          "other": "la madre",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "vader",
-          "other": "padre",
+          "dutch": "de vader",
+          "other": "il padre",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "broer",
-          "other": "fratello",
+          "dutch": "de broer",
+          "other": "il fratello",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "zus",
-          "other": "sorella",
+          "dutch": "de zus",
+          "other": "la sorella",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "zoon",
-          "other": "figlio",
+          "dutch": "de zoon",
+          "other": "il figlio",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "dochter",
-          "other": "figlia",
+          "dutch": "de dochter",
+          "other": "la figlia",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "ouders",
-          "other": "genitori",
+          "dutch": "de ouders",
+          "other": "i genitori",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "naam",
-          "other": "nome",
+          "dutch": "de naam",
+          "other": "il nome",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "werk",
-          "other": "lavoro",
+          "dutch": "het werk",
+          "other": "il lavoro",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "baan",
-          "other": "lavoro",
+          "dutch": "de baan",
+          "other": "il lavoro",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "school",
-          "other": "scuola",
+          "dutch": "de school",
+          "other": "la scuola",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "universiteit",
-          "other": "università",
+          "dutch": "de universiteit",
+          "other": "l'università",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "leraar",
-          "other": "insegnante",
+          "dutch": "de leraar",
+          "other": "l'insegnante",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "student",
-          "other": "studente",
+          "dutch": "de student",
+          "other": "lo studente",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "boek",
-          "other": "libro",
+          "dutch": "het boek",
+          "other": "il libro",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "pagina",
-          "other": "pagina",
+          "dutch": "de pagina",
+          "other": "la pagina",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "woord",
-          "other": "parola",
+          "dutch": "het woord",
+          "other": "la parola",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "taal",
-          "other": "lingua",
+          "dutch": "de taal",
+          "other": "la lingua",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "vraag",
-          "other": "domanda",
+          "dutch": "de vraag",
+          "other": "la domanda",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "antwoord",
-          "other": "risposta",
+          "dutch": "het antwoord",
+          "other": "la risposta",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "probleem",
-          "other": "problema",
+          "dutch": "het probleem",
+          "other": "il problema",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "idee",
-          "other": "idea",
+          "dutch": "het idee",
+          "other": "l'idea",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "reden",
-          "other": "ragione",
+          "dutch": "de reden",
+          "other": "la ragione",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "voorbeeld",
-          "other": "esempio",
+          "dutch": "het voorbeeld",
+          "other": "l'esempio",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "verhaal",
-          "other": "storia",
+          "dutch": "het verhaal",
+          "other": "la storia",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "nieuws",
-          "other": "notizia",
+          "dutch": "het nieuws",
+          "other": "la notizia",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "brief",
-          "other": "lettera",
+          "dutch": "de brief",
+          "other": "la lettera",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "bericht",
-          "other": "messaggio",
+          "dutch": "het bericht",
+          "other": "il messaggio",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "telefoon",
-          "other": "telefono",
+          "dutch": "de telefoon",
+          "other": "il telefono",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "computer",
-          "other": "computer",
+          "dutch": "de computer",
+          "other": "il computer",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "internet",
-          "other": "internet",
+          "dutch": "het internet",
+          "other": "l'internet",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "foto",
-          "other": "foto",
+          "dutch": "de foto",
+          "other": "la foto",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "muziek",
-          "other": "musica",
+          "dutch": "de muziek",
+          "other": "la musica",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "film",
-          "other": "film",
+          "dutch": "de film",
+          "other": "il film",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "restaurant",
-          "other": "ristorante",
+          "dutch": "het restaurant",
+          "other": "il ristorante",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "winkel",
-          "other": "negozio",
+          "dutch": "de winkel",
+          "other": "il negozio",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "markt",
-          "other": "mercato",
+          "dutch": "de markt",
+          "other": "il mercato",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "hotel",
-          "other": "albergo",
+          "dutch": "het hotel",
+          "other": "l'albergo",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "café",
-          "other": "bar",
+          "dutch": "het café",
+          "other": "il bar",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "eten",
-          "other": "cibo",
+          "dutch": "het eten",
+          "other": "il cibo",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "brood",
-          "other": "pane",
+          "dutch": "het brood",
+          "other": "il pane",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "water",
-          "other": "acqua",
+          "dutch": "het water",
+          "other": "l'acqua",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "koffie",
-          "other": "caffè",
+          "dutch": "de koffie",
+          "other": "il caffè",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "thee",
-          "other": "tè",
+          "dutch": "de thee",
+          "other": "il tè",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "melk",
-          "other": "latte",
+          "dutch": "de melk",
+          "other": "il latte",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "wijn",
-          "other": "vino",
+          "dutch": "de wijn",
+          "other": "il vino",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "bier",
-          "other": "birra",
+          "dutch": "het bier",
+          "other": "la birra",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "vlees",
-          "other": "carne",
+          "dutch": "het vlees",
+          "other": "la carne",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "vis",
-          "other": "pesce",
+          "dutch": "de vis",
+          "other": "il pesce",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "kip",
-          "other": "pollo",
+          "dutch": "de kip",
+          "other": "il pollo",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "kaas",
-          "other": "formaggio",
+          "dutch": "de kaas",
+          "other": "il formaggio",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "ei",
-          "other": "uovo",
+          "dutch": "het ei",
+          "other": "l'uovo",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "fruit",
-          "other": "frutta",
+          "dutch": "het fruit",
+          "other": "la frutta",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "appel",
-          "other": "mela",
+          "dutch": "de appel",
+          "other": "la mela",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "sinaasappel",
-          "other": "arancia",
+          "dutch": "de sinaasappel",
+          "other": "l'arancia",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "groente",
-          "other": "verdura",
+          "dutch": "de groente",
+          "other": "la verdura",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "tomaat",
-          "other": "pomodoro",
+          "dutch": "de tomaat",
+          "other": "il pomodoro",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "aardappel",
-          "other": "patata",
+          "dutch": "de aardappel",
+          "other": "la patata",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "geld",
-          "other": "denaro",
+          "dutch": "het geld",
+          "other": "il denaro",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "prijs",
-          "other": "prezzo",
+          "dutch": "de prijs",
+          "other": "il prezzo",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "rekening",
-          "other": "conto",
+          "dutch": "de rekening",
+          "other": "il conto",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "kaart",
-          "other": "carta",
+          "dutch": "de kaart",
+          "other": "la carta",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "ticket",
-          "other": "biglietto",
+          "dutch": "het ticket",
+          "other": "il biglietto",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "paspoort",
-          "other": "passaporto",
+          "dutch": "het paspoort",
+          "other": "il passaporto",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "sleutel",
-          "other": "chiave",
+          "dutch": "de sleutel",
+          "other": "la chiave",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "tas",
-          "other": "borsa",
+          "dutch": "de tas",
+          "other": "la borsa",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "kleding",
-          "other": "vestiti",
+          "dutch": "de kleding",
+          "other": "i vestiti",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "schoen",
-          "other": "scarpa",
+          "dutch": "de schoen",
+          "other": "la scarpa",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "shirt",
-          "other": "camicia",
+          "dutch": "het shirt",
+          "other": "la camicia",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "broek",
-          "other": "pantaloni",
+          "dutch": "de broek",
+          "other": "i pantaloni",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "jas",
-          "other": "giacca",
+          "dutch": "de jas",
+          "other": "la giacca",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "kleur",
-          "other": "colore",
+          "dutch": "de kleur",
+          "other": "il colore",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "auto",
-          "other": "automobile",
+          "dutch": "de auto",
+          "other": "l'automobile",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "weg",
-          "other": "via",
+          "dutch": "de weg",
+          "other": "la via",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "plaats",
-          "other": "posto",
+          "dutch": "de plaats",
+          "other": "il posto",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "kant",
-          "other": "lato",
+          "dutch": "de kant",
+          "other": "il lato",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "begin",
-          "other": "inizio",
+          "dutch": "het begin",
+          "other": "l'inizio",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "einde",
-          "other": "fine",
+          "dutch": "het einde",
+          "other": "la fine",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "deel",
-          "other": "parte",
+          "dutch": "het deel",
+          "other": "la parte",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "soort",
-          "other": "tipo",
+          "dutch": "het soort",
+          "other": "il tipo",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "manier",
-          "other": "modo",
+          "dutch": "de manier",
+          "other": "il modo",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "keer",
-          "other": "volta",
+          "dutch": "de keer",
+          "other": "la volta",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "geval",
-          "other": "caso",
+          "dutch": "het geval",
+          "other": "il caso",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "wereld",
-          "other": "mondo",
+          "dutch": "de wereld",
+          "other": "il mondo",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "leven",
-          "other": "vita",
+          "dutch": "het leven",
+          "other": "la vita",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "dood",
-          "other": "morte",
+          "dutch": "de dood",
+          "other": "la morte",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "liefde",
-          "other": "amore",
+          "dutch": "de liefde",
+          "other": "l'amore",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "oorlog",
-          "other": "guerra",
+          "dutch": "de oorlog",
+          "other": "la guerra",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "vrede",
-          "other": "pace",
+          "dutch": "de vrede",
+          "other": "la pace",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "kracht",
-          "other": "forza",
+          "dutch": "de kracht",
+          "other": "la forza",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "hulp",
-          "other": "aiuto",
+          "dutch": "de hulp",
+          "other": "l'aiuto",
           "type": "noun",
           "auxiliary": ""
         },
         {
-          "dutch": "geld",
-          "other": "soldi",
+          "dutch": "het geld",
+          "other": "i soldi",
           "type": "noun",
           "auxiliary": ""
         }
