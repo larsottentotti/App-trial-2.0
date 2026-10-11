@@ -30,6 +30,13 @@ const LS_CONJ = "gds.conjugations";
 const LS_STATS = "gds.stats";
 const LS_SETTINGS = "gds.settings";
 const LS_THEME = "gds.theme";
+const LS_BUNDLE = "gds.bundleVersion";
+
+// Bump this number every time vocab.json changes. On the next start the
+// app replaces its built-in decks with the new ones (keeping decks the
+// user imported and carrying word stats over). Without this, the copy
+// saved on the phone at first launch would be used forever.
+const BUNDLE_VERSION = 5;
 
 /* ============================================================
    STATE
@@ -167,6 +174,72 @@ function saveSettings() {
   }));
 }
 
+// Moves right/wrong counts from an old wording of a word to the new one
+// (e.g. "huis||casa" -> "het huis||la casa"). Words are matched by
+// position, and only when the new text still ends with the old text, so
+// a changed deck can never hand one word's stats to a different word.
+function migrateStats(oldSet, newSet) {
+  const n = Math.min(oldSet.pairs.length, newSet.pairs.length);
+
+  for (let i = 0; i < n; i++) {
+    const o = oldSet.pairs[i];
+    const f = newSet.pairs[i];
+
+    if (o.dutch === f.dutch && o.other === f.other) continue;
+    if (!f.dutch.endsWith(o.dutch) || !f.other.endsWith(o.other)) continue;
+
+    const oldKey = `${oldSet.id}::${o.dutch}||${o.other}`;
+    const entry = state.stats[oldKey];
+    if (!entry) continue;
+
+    const newKey = `${newSet.id}::${f.dutch}||${f.other}`;
+    entry.dutch = f.dutch;
+    entry.other = f.other;
+
+    const existing = state.stats[newKey];
+    if (existing) {
+      existing.correct += entry.correct;
+      existing.wrong += entry.wrong;
+    } else {
+      state.stats[newKey] = entry;
+    }
+    delete state.stats[oldKey];
+  }
+
+  saveStats();
+}
+
+// Replaces the built-in decks with the freshly bundled ones, but keeps
+// decks the user imported themselves and any words they added to a
+// built-in deck (those are flagged custom when imported).
+function refreshBundledSets(storedSets, bundledSets) {
+  const bundledIds = new Set(bundledSets.map(s => s.id));
+  const result = [];
+
+  for (const fresh of bundledSets) {
+    const old = storedSets.find(s => s.id === fresh.id);
+
+    if (old) {
+      migrateStats(old, fresh);
+
+      const have = new Set(fresh.pairs.map(p => p.dutch + "||" + p.other));
+      for (const p of old.pairs) {
+        if (p.custom && !have.has(p.dutch + "||" + p.other)) {
+          fresh.pairs.push(p);
+        }
+      }
+    }
+
+    result.push(fresh);
+  }
+
+  for (const s of storedSets) {
+    if (!bundledIds.has(s.id)) result.push(s);
+  }
+
+  return result;
+}
+
 async function loadInitialData() {
   const storedVocab = localStorage.getItem(LS_VOCAB);
   const storedConj = localStorage.getItem(LS_CONJ);
@@ -174,13 +247,29 @@ async function loadInitialData() {
   const storedSettings = localStorage.getItem(LS_SETTINGS);
   const storedTheme = localStorage.getItem(LS_THEME);
 
-  if (storedVocab) {
-    state.sets = JSON.parse(storedVocab);
+  // Stats load first: refreshing the built-in decks may rename words,
+  // and the stats need to follow them.
+  state.stats = storedStats ? JSON.parse(storedStats) : {};
+
+  const storedBundleVersion = Number(localStorage.getItem(LS_BUNDLE) || 0);
+  let sets = storedVocab ? JSON.parse(storedVocab) : null;
+
+  if (!sets || storedBundleVersion < BUNDLE_VERSION) {
+    try {
+      const res = await fetch("vocab.json");
+      const data = await res.json();
+      sets = sets ? refreshBundledSets(sets, data.sets) : data.sets;
+      state.sets = sets;
+      saveVocabSets();
+      localStorage.setItem(LS_BUNDLE, String(BUNDLE_VERSION));
+    } catch (e) {
+      // Offline and nothing cached yet: keep what is on the phone and
+      // try the refresh again next time.
+      if (!sets) throw e;
+      state.sets = sets;
+    }
   } else {
-    const res = await fetch("vocab.json");
-    const data = await res.json();
-    state.sets = data.sets;
-    saveVocabSets();
+    state.sets = sets;
   }
 
   if (storedConj) {
@@ -190,8 +279,6 @@ async function loadInitialData() {
     state.conjugations = await res.json();
     saveConjugations();
   }
-
-  state.stats = storedStats ? JSON.parse(storedStats) : {};
 
   if (storedSettings) {
     const s = JSON.parse(storedSettings);
@@ -917,7 +1004,7 @@ function wireImportView() {
         const seen = new Set(existing.pairs.map(p => p.dutch + "||" + p.other));
         for (const p of incoming.pairs) {
           const key = p.dutch + "||" + p.other;
-          if (!seen.has(key)) { existing.pairs.push(p); seen.add(key); }
+          if (!seen.has(key)) { existing.pairs.push({ ...p, custom: true }); seen.add(key); }
         }
         existing.isItalianVerbs = existing.isItalianVerbs || incoming.isItalianVerbs;
       } else {

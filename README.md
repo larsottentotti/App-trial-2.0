@@ -46,6 +46,16 @@ your own web server) — there's no build step, it's just static files.
   columns. Only rows with `Type = verb` get conjugation-quizzed, and
   only if that CSV/column is Italian.
 
+## 4. Changing the built-in vocab (vocab.json)
+
+The phone keeps its own saved copy of the decks, so editing
+`vocab.json` alone changes nothing on a phone that has already run
+the app. After you change `vocab.json`, also raise `BUNDLE_VERSION`
+(near the top of `app.js`) by 1 and raise the number in
+`CACHE_NAME` in `sw.js` by 1. On the next start the phone swaps in the
+new built-in decks, keeps the decks and words you imported yourself,
+and carries your word stats over to reworded words.
+
 ## What's different from the desktop app
 
 - No Flashcards mode (you said you only use Multiple Choice / Type

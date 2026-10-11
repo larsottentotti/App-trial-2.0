@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE_NAME = "grasso-di-scende-v4";
+const CACHE_NAME = "grasso-di-scende-v5";
 
 const APP_SHELL = [
   "./",
@@ -18,7 +18,18 @@ const APP_SHELL = [
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then((cache) => cache.addAll(APP_SHELL))
+      .then((cache) =>
+        // cache: "reload" skips the browser's own HTTP cache, so an update
+        // always stores the files that are really on the server now.
+        Promise.all(
+          APP_SHELL.map((url) =>
+            fetch(new Request(url, { cache: "reload" })).then((response) => {
+              if (!response.ok) throw new Error("Could not cache " + url);
+              return cache.put(url, response);
+            })
+          )
+        )
+      )
       .then(() => self.skipWaiting())
   );
 });
